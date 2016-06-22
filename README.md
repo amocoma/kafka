@@ -5,6 +5,15 @@ __no-kafka__ is [Apache Kafka](https://kafka.apache.org) 0.9 client for Node.js 
 It's a fork [from] https://github.com/oleksiyk/kafka. This version has 'just' the ssl-capabilities of kafka 0.9 included. 
 To connect to a kafka >0.9 server just pass a ssl attribute within the option parameter of the producer or consumer. E.g:
 
+
+
+```json
+    "dependencies" : {
+        "no-kafka": "git+https://github.com/amocoma/kafka.git"
+    },
+```
+
+
 ```javascript
 var Kafka = require('no-kafka');
 var zkOptions = {connectionString:'kafka+ssl://abc1.com:9096,kafka+ssl://abc2.com:9096', 
